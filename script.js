@@ -6,27 +6,27 @@ const CONFIG = {
         dinner: {
             subject: "You're Invited to Dinner! 💕",
             venue: "Drunk Skillet Steak & Grill",
-            location: "Tagbilaran City",
+            location: "Seaside, Becca Building, 0348 Venancio P. Inting Avenue, Mansasa, Tagbilaran City, 6300 Bohol",
             time: "7:00 PM (19:00)",
             type: "Romantic Dinner"
         },
         lunch: {
             subject: "Let's Have Brunch Together! ☕",
             venue: "Tamper Coffee and Brunch",
-            location: "Tagbilaran",
+            location: "P. Del Rosario Street corner CPG East Avenue, Poblacion 1, Tagbilaran City, 6300 Bohol",
             time: "11:00 AM",
             type: "Brunch Date"
         },
         snack: {
             subject: "Afternoon Treat Date! 🧁",
             venue: "Heath's Cafe",
-            location: "Tagbilaran City",
+            location: "419a Carlos P. Garcia East Avenue, Tagbilaran City, 6300 Bohol",
             time: "4:00 PM (16:00)",
             type: "Afternoon Snack"
         },
         home: {
             subject: "Cozy Home Date Together! 🏡",
-            venue: "Your place",
+            venue: "Song-on, Loon, Bohol",
             location: "Home",
             time: "We'll cook together",
             type: "Home Date"
@@ -169,11 +169,11 @@ function handleDateSelection(option) {
 async function sendEmail(dateInfo) {
     // Create email body
     const emailBody = `
-Hello! 💕
+Hello Lalovee! 💕
 
-Great news! Your Valentine has accepted the invitation!
+I would like to express how much you mean to me and how grateful I am for you. I’m truly excited and looking forward to spending our upcoming Valentine’s date together.
 
-Date Details:
+Valentine's Date Details:
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
 📍 Type: ${dateInfo.type}
 🏢 Venue: ${dateInfo.venue}
@@ -186,7 +186,6 @@ With love,
 Kyle
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━
-This invitation was sent from the Valentine's Date Selector
 Sent to: ${CONFIG.recipientEmail}
 From: ${CONFIG.senderEmail}
     `.trim();

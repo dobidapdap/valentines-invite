@@ -250,9 +250,12 @@ body {
 /* Date Options */
 .date-options {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 1.5rem;
     margin-top: 2rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .date-card {
@@ -410,6 +413,12 @@ body {
 }
 
 /* Responsive Design */
+@media (max-width: 1200px) {
+    .date-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
 @media (max-width: 768px) {
     .content-wrapper {
         padding: 1.5rem;
