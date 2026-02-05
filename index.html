@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Be My Valentine? 💕</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600;700&family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Floating Hearts Background -->
+    <div class="hearts-container">
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+        <div class="heart"></div>
+    </div>
+
+    <!-- Question Screen -->
+    <div id="question-screen" class="screen active">
+        <div class="content-wrapper">
+            <h1 class="main-title">Will You Be My Valentine?</h1>
+            <p class="subtitle">This Valentine's Day, I want to spend it with you ❤️</p>
+            
+            <div class="button-container">
+                <button id="yes-btn" class="btn yes-btn">Yes! 💕</button>
+                <button id="no-btn" class="btn no-btn">No</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Celebration Screen -->
+    <div id="celebration-screen" class="screen">
+        <div class="confetti-container"></div>
+        <div class="content-wrapper celebration-content">
+            <h1 class="celebration-title">You Said Yes! 🎉</h1>
+            <p class="celebration-subtitle">I'm so happy! Now, let's plan our perfect date...</p>
+            
+            <div class="date-options">
+                <div class="date-card" data-option="dinner">
+                    <div class="card-icon">🍽️</div>
+                    <h3>Romantic Dinner</h3>
+                    <p>Drunk Skillet Steak & Grill</p>
+                    <span class="time">7:00 PM</span>
+                </div>
+
+                <div class="date-card" data-option="lunch">
+                    <div class="card-icon">☕</div>
+                    <h3>Brunch Date</h3>
+                    <p>Tamper Coffee and Brunch</p>
+                    <span class="time">11:00 AM</span>
+                </div>
+
+                <div class="date-card" data-option="snack">
+                    <div class="card-icon">🧁</div>
+                    <h3>Afternoon Treat</h3>
+                    <p>Heath's Cafe</p>
+                    <span class="time">4:00 PM</span>
+                </div>
+
+                <div class="date-card" data-option="home">
+                    <div class="card-icon">🏡</div>
+                    <h3>Cozy Home Date</h3>
+                    <p>Cook Together at Home</p>
+                    <span class="time">Anytime</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Confirmation Screen -->
+    <div id="confirmation-screen" class="screen">
+        <div class="content-wrapper confirmation-content">
+            <div class="check-animation">✓</div>
+            <h1 class="confirmation-title">It's a Date! 💖</h1>
+            <p class="confirmation-message" id="confirmation-message"></p>
+            <p class="confirmation-note">Check your email for all the details!</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
